@@ -41,6 +41,12 @@ enterpriseApp.controller('AppCtrl', ['$scope',
 			name: "Kun Aguero",
 			description: "The killer"
 		}, {
+			name: "Fernando HOla",
+			description: "Chief Officer"
+		}, {
+			name: "Andy Kustnesoff",
+			description: "The Locutor"
+		}, {
 			name: "Maradona",
 			description: "God God!"
 		}];
