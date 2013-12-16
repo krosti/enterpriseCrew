@@ -1,4 +1,4 @@
-var enterpriseApp = angular.module('enterprise', ['ngRoute']);
+var enterpriseApp = angular.module('enterprise', ['ngRoute', 'ngAnimate']);
 
 enterpriseApp.config(function($routeProvider) {
 	$routeProvider.
@@ -19,7 +19,9 @@ enterpriseApp.config(function($routeProvider) {
 });
 
 enterpriseApp.controller('AppCtrl', ['$scope',
+
 	function($scope) {
+
 		$scope.crew = [{
 			name: "Picard",
 			description: "Captain"
@@ -29,6 +31,15 @@ enterpriseApp.controller('AppCtrl', ['$scope',
 		}, {
 			name: "Ronaldo",
 			description: "I dont know"
+		}, {
+			name: "Gaston",
+			description: "Main Officer"
+		}, {
+			name: "Lucas",
+			description: "Main Chief Cocker"
+		}, {
+			name: "Kun Aguero",
+			description: "The killer"
 		}, {
 			name: "Maradona",
 			description: "God God!"
