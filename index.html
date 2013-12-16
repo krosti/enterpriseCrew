@@ -11,7 +11,7 @@
 	<div class="container">
 		<div ng-controller="AppCtrl">
 			<a href="/"><h1>Enterprise Crew</h1></a>
-			<div ng-view></div>
+			<div ng-view ng-animate="{enter: 'enter-animation', leave: 'leave-animation'}"></div>
 		</div>
 	</div>
 
@@ -26,6 +26,5 @@
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 	<!-- Enterprise Crew JS -->
 	<script src="js/app.js" type="text/javascript"></script>
-	<script src="js/angular-local-storage.js" type="text/javascript"></script>
 </body>
 </html>

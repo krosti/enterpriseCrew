@@ -50,6 +50,10 @@ enterpriseApp.controller('AppCtrl', ['$scope',
 			name: "Maradona",
 			description: "God God!"
 		}];
+
+		$scope.delete = function(index) {
+			$scope.crew.splice(index, 1);
+		}
 	}
 ]);
 
