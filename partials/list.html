@@ -16,7 +16,10 @@
 						<td>{{person.name}}</td>
 						<td>{{person.description}}</td>
 						<td><a href="#/edit/{{$index}}" title="Edit"><i class="glyphicon glyphicon-edit"></i></a></td>
-						<td><a href="#" title="Delete"><i ng-click="delete($index)" class="glyphicon glyphicon-remove"></i></a></td>
+						<td><a href="#" title="Delete"><button type="button" ng-click="delete($index)" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span> Delete</button></a></td>
 					</tr>
 				</tbody>
 </table>
+<div>
+	<span>Crew in the Enterprise: {{crew.length}}</span>
+</div>
