@@ -10,7 +10,7 @@
 					<tr ng-repeat="person in crew">
 						<td>{{person.name}}</td>
 						<td>{{person.description}}</td>
-						<td><i class="glyphicon glyphicon-edit"></i></td>
+						<td><a href="#/edit/{{$index}}"><i class="glyphicon glyphicon-edit"></i></a></td>
 					</tr>
 				</tbody>
 </table>
