@@ -7,7 +7,7 @@
 					<tr>
 						<th>Name</th>
 						<th>Description</th>
-						<th><a href="#/new" title="Add Person"><i class="glyphicon glyphicon-plus-sign"></i></a></th>
+						<th><a ng-hide="crew.length >= 13" href="#/new" title="Add Person"><i class="glyphicon glyphicon-plus-sign"></i></a></th>
 						<th></th>
 					</tr>
 				</thead>
@@ -24,14 +24,18 @@
 	<span><h3>Crew of the Enterprise: {{crew.length}}</h3></span>
 </div>
 
-<div ng-if="crew.length < 10" class="alert alert-success col-md-8">
+<div ng-if="crew.length < 10" class="animate-if alert alert-success col-md-8">
 	<span>The Enterprise it´s <strong>GOOOD!</strong></span>
 </div>
 
-<div ng-if="crew.length >= 10 && crew.length <= 12" class="alert alert-warning col-md-8">
+<div ng-if="crew.length >= 10 && crew.length < 12" class="animate-if alert alert-warning col-md-8">
 	<span>The Enterprise it´s almost  full!!</span>
 </div>
 
-<div ng-if="crew.length > 12" class="alert alert-danger col-md-8">
-	<span>The Enterprise it´s <strong>FULL!!</strong> Kick someone!</span>
+<div ng-if="crew.length==12" class="animate-if alert alert-warning col-md-8">
+	<span><strong>Hey!</strong> Stop adding people to the crew! Or you will have to kick someone!</span>
+</div>
+
+<div ng-if="crew.length > 12" class="animate-if alert alert-danger col-md-8">
+	<span>The Enterprise it´s <strong>FULL!!</strong>Now you have Kick someone! I told you!</span>
 </div>
