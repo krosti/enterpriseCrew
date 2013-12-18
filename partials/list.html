@@ -24,7 +24,12 @@
 	<span><h3>Crew of the Enterprise: {{crew.length}}</h3></span>
 </div>
 
-<div ng-if="crew.length < 10" class="animate-if alert alert-success col-md-8">
+
+<div ng-if="crew.length == 0" class="animate-if alert alert-success col-md-8">
+	<span>The Enterprise feels <strong>lonely</strong></span>
+</div>
+
+<div ng-if="crew.length > 0 && crew.length < 10" class="animate-if alert alert-success col-md-8">
 	<span>The Enterprise it´s <strong>GOOOD!</strong></span>
 </div>
 
@@ -32,7 +37,7 @@
 	<span>The Enterprise it´s almost  full!!</span>
 </div>
 
-<div ng-if="crew.length==12" class="animate-if alert alert-warning col-md-8">
+<div ng-if="crew.length == 12" class="animate-if alert alert-warning col-md-8">
 	<span><strong>Hey!</strong> Stop adding people to the crew! Or you will have to kick someone!</span>
 </div>
 
