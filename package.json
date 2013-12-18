@@ -1,8 +1,9 @@
 {
-	"name": "Enterprise Crew",
+	"name": "enterprise-crew",
 	"description": "An app developed in AngularJS to teach how it works",
+	"author": "Gaston Mira <gastonmira@gmail.com>",
 	"dependencies": {
-		"http-server": ">= 1.3.0"
+		"http-server": "1.3.x"
 	},
 	"version": "1.0.0"
 }
